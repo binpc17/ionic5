@@ -1,0 +1,29 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+<!-- Navigation tabs -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/crud-list">
+      <ion-icon name="list-outline"></ion-icon>
+      <ion-label>Tasks</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/crud-search">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-label>Search</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/login">
+      <ion-icon name="power-outline"></ion-icon>
+      <ion-label>Login</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/crud-search">
+      <ion-icon name="camera-outline"></ion-icon>
+      <ion-label>File</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/crud-create">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-label>Create Task</ion-label>
+
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

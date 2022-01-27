@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-explore-container name="Tab 1 page">
+  </app-explore-container>
+  <ion-button ion-button="" (click)="goLogin()">Go LogIn</ion-button>  <ion-button ion-button="" (click)="goCRud()"> Crud Pannel</ion-button>
+  <ion-button ion-button="" color="danger" (click)="presentActionSheet()">ActionSheet</ion-button>
+  <ion-button ion-button="" color="dark" (click)="opencam()">CameraOPening</ion-button>
+  <div *ngIf=="!image">
+      <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+      From Camera
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+ <img [src]="image" />
+    </ion-card-content>
+  </ion-card>
+    </div>
+</ion-content>
